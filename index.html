@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirasha & Lasitha Wedding</title>
+  <script>
+    // Intercept element creation to add lazy loading to all images
+    const originalCreateElement = document.createElement;
+    document.createElement = function(tagName) {
+      const el = originalCreateElement.apply(this, arguments);
+      if (tagName && tagName.toLowerCase() === 'img') {
+        el.setAttribute('loading', 'lazy');
+      }
+      return el;
+    };
+  </script>
+  <link rel="preload" href="js/index-KMDKit-Q.js" as="script" crossorigin="">
+  <link rel="preload" href="css/index-CczjjYTs.css" as="style">
+  <script type="module" crossorigin="" src="js/index-KMDKit-Q.js"></script>
+  <link rel="stylesheet" crossorigin="" href="css/index-CczjjYTs.css">
+</head>
+
+<body>
+  <div id="root"></div>
+
+
+</body>
+
+</html>
